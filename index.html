@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container"  id="box-container">
+        <div class="result">
+            <div id="preview">
+              <!-- this preview is a div which is changing shadows and borders -->
+            </div>
+            <div class="settings">
+                <div class="range-wrapper">
+                    <label for="x-shadow">Horizontal Shadow :</label>
+                    <input type="range" id="x-shadow" />
+                </div>
+                <div class="range-wrapper">
+                    <label for="y-shadow">Vertical Shadow :</label>
+                    <input type="range" id="y-shadow" />
+                </div>
+                <div class="range-wrapper">
+                    <label for="blur-r">Blur Radius :</label>
+                    <input type="range" id="blur-r" />
+                </div>
+
+                <div class="range-wrapper">
+                    <label for="spread-r">Spread Radius :</label>
+                    <input type="range" id="spread-r" />
+                </div>
+
+                <div class="range-wrapper">
+                    <label for="border-r">Border Radius :</label>
+                    <input type="range" id="border-r" min="0" max="100" value="70"  step="1"/>
+                </div>
+                <div class="range-wrapper">
+                    <label for="shadow-opacity">Shadow Opacity :</label>
+                    <input type="range" id="shadow-opacity" min="0" max="1" value="0.5"  step="0.1"/>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="inset-shadow">Insert Shadow :</label>
+                    <input type="checkbox" name="" id="inset-shadow">
+                </div>
+
+                <div id="color-wrapper">
+                    <label for="shadow-color">Shadow Color :</label>
+                    <input type="color" id="shadow-color" />
+                </div>
+
+                <div id="color-wrapper">
+                    <label for="shadow-color">Box Color :</label>
+                    <input type="color" id="box-color" value="#ccccff"/>
+                </div>
+            </div>
+        </div>
+
+
+      <div class="code-container">
+        <textarea name="textarea" id="styles" cols="30" rows="2"></textarea>
+        <button id="copy-styles" onclick="CopyStyles()">Copy Styles</button>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
